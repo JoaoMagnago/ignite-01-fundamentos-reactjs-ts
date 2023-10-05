@@ -1,0 +1,21 @@
+.wrapper {
+  /* Não é necessário definir a largura (width) do wrapper, pois é um display block que, por padrão, já possui 100% */
+  max-width: 70rem;
+  margin: 2rem auto;
+  /* Padding lateral pequeno para dar um pequeno espaçamento nas laterais e não dar a sensação de que o conteúdo ocupa a tela toda */
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 256px 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
